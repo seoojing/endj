@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html>
+<title>police</title>
+<style>
+@font-face {
+      font-family: "DungGeunMo";
+      src: url("DungGeunMo.woff");
+    }
+	
+	body{background-color: #484535; font-family: "DungGeunMo"; overflow:hidden}
+
+	#backk{width: auto; height: 100%; animation:start 2s alternate;}
+	#backk img{width: 1250px; height: auto;}
+	
+	#backk2{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 2s alternate; }
+	#backk2 img{width: 1250px; height: auto;animation:start 2s alternate;}
+
+	#backk3{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 2s alternate; display: none;}
+	#backk3 img{width: 1250px; height: auto;animation:start 2s alternate;}
+	#backk4{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 3s alternate; display: none;}
+	#backk4 img{width: 1250px; height: auto;animation:start 2s alternate;}
+	#backk5{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 3s alternate; display: none;}
+	#backk5 img{width: 1250px; height: auto;animation:start 2s alternate;}
+	#backk6{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 3s alternate; display: none;}
+	#backk6 img{width: 1250px; height: auto;animation:start 2s alternate;}
+
+	#backk7{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 3s alternate; display: none;}
+	#backk7 img{width: 1250px; height: auto;animation:start 2s alternate;}
+	#backk8{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 3s alternate; display: none;}
+	#backk8 img{width: 1250px; height: auto;animation:start 2s alternate;}
+	#backk9{  width: auto; height: 100%;  position: absolute; top: 16.5px;animation:start 3s alternate; display: none;}
+	#backk9 img{width: 1250px; height: auto;animation:start 2s alternate;}
+
+
+a2 { color: black;
+	position: absolute;
+	width: 53ch;
+	margin: 21em 8em;
+	cursor: pointer;
+	}
+
+a2:hover{ color: white;
+	position: absolute;	
+	width: 53ch;
+	margin: 21em 8em;
+	}
+
+	#book { position: absolute; z-index: 99;cursor: pointer;top:2%; right: -1%; animation:start 2s alternate;}
+	#book img{ position: absolute; width: 80px; height:auto; z-index: 99;cursor: pointer;}
+	#book:hover {opacity: 0.7}
+
+	#map { position: absolute; z-index: 99;cursor: pointer;top:12%; right: -1%; animation:start 2s alternate;}
+	#map img{ position: absolute; width: 80px; height:auto; z-index: 99;cursor: pointer;}
+	#map:hover {opacity: 0.7}
+
+	#hint { position: absolute; z-index: 99;cursor: pointer;top:22%; right: -1%; animation:start 2s alternate;}
+	#hint img{ position: absolute; width: 80px; height:auto; z-index: 99;cursor: pointer;}
+	#hint:hover {opacity: 0.7}
+
+	#smart { position: absolute; z-index: 99;cursor: pointer;top:32%; right: -1%; animation:start 2s alternate;}
+	#smart img{ position: absolute; width: 80px; height:auto; z-index: 99;cursor: pointer;}
+	#smart:hover {opacity: 0.7}
+
+	#logo{top: -5%; left: 47%; position: absolute;}
+	#logo img{width: 120px; height: auto;}
+
+
+	#bx { position: absolute; bottom: 7%; left: 20%; display: none;}
+	#bx img{ width: 75%; height: auto;  }
+	#bx2 { position: absolute; bottom: 7%; left: 20%; display: none;}
+	#bx2 img{ width: 75%; height: auto;  }
+	#yaa{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 43%;font-family: "DungGeunMo";cursor: pointer;z-index: 10;}
+	#yaa:hover{color: white; }
+	#yaa3{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 43%;font-family: "DungGeunMo";cursor: pointer;}
+	#yaa3:hover{color: white; }
+
+
+	#noo{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 55%;font-family: "DungGeunMo";cursor: pointer;z-index: 10;}
+	#noo:hover{color: white; }
+	#foo{bottom: 16%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none; animation: tong 2s infinite;}
+		#foo img{height: 20px;width: auto; }
+
+	#poom{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom2{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom3{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom4{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	
+	#poom5{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom6{bottom: 9%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom7{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom8{bottom: 9%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom9{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom10{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+
+	#poom11{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom12{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom13{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom14{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom15{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom16{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom17{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom18{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom19{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom20{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom21{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom22{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom23{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom24{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom25{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom26{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom27{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom28{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom29{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";}
+	#poom30{bottom: 13%; font-weight: 5px; font-size: 1em;display:none; left: 23%;font-family: "DungGeunMo";display: none;}
+	#poom31{top: 5%; font-weight: 5px; font-size: 1.2em; left: 23%;font-family: "DungGeunMo";display: none;}
+
+	#poom32{top:85%; font-weight: 5px; font-size: 1.2em; left: 23%;font-family: "DungGeunMo";cursor: pointer;display: none;animation:start 4s alternate;}
+
+	#poom33{top:85%; font-weight: 5px; font-size: 1.2em; left: 43%;font-family: "DungGeunMo";cursor: pointer;display: none;animation:start 4s alternate;}
+
+		#poom34{top: 85%; font-weight: 5px; font-size: 1.2em; left: 63%;font-family: "DungGeunMo";cursor: pointer;display: none;animation:start 4s alternate;}
+
+#poom32:hover{color: white;}
+#poom33:hover{color: white;}
+#poom34:hover{color: white;}
+
+	#poom35{top: 5%; font-weight: 5px; font-size: 1.2em; left: 23%;font-family: "DungGeunMo";display: none;}
+	#poom36{top: 5%; font-weight: 5px; font-size: 1.2em; left: 23%;font-family: "DungGeunMo";display: none;}
+
+
+
+
+
+	#yaa2{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";cursor: pointer;}
+	#yaa2:hover{color: white; }
+	#noo2{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 50%;font-family: "DungGeunMo";cursor: pointer;}
+	#noo2:hover{color: white; }
+
+	#noo3{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 47%;font-family: "DungGeunMo";cursor: pointer;}
+	#noo3:hover{color: white; }
+	#vaa3{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 59%;font-family: "DungGeunMo";cursor: pointer;}
+	#vaa3:hover{color: white; }
+
+
+
+	#nn{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#nn2{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#nn3{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#nn4{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#nn5{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#nn6{bottom: 18%; font-weight: 5px; font-size: 1.5em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#okk{bottom: 16%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#okk img{height: 20px;width: auto; }
+#oki{bottom: 16%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;}
+		#oki img{height: 20px;width: auto; }
+
+
+
+	#oo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none; animation: tong 2s infinite;}
+		#oo img{height: 50px;width: auto; }
+	#ooo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#ooo img{height: 50px;width: auto; }
+	#oooo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#oooo img{height: 50px;width: auto; }	
+	#ooooo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#ooooo img{height: 50px;width: auto; }	
+	#ko{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#ko img{height: 50px;width: auto; }
+	#koo{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#koo img{height: 50px;width: auto; }
+	#kooo{bottom: 15%; right: 25%;z-index: 100; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#kooo img{height: 50px;width: auto; }
+	#koooo{bottom: 15%; right: 25%;z-index: 100; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#koooo img{height: 50px;width: auto; }
+	#kooooo{bottom: 15%; right: 25%;z-index: 100; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#kooooo img{height: 50px;width: auto; }
+
+
+
+
+	#next{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next img{height: 50px;width: auto; }
+	#next1{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next1 img{height: 50px;width: auto; }
+	#next2{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next2 img{height: 50px;width: auto; }
+
+	#next3{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next3 img{height: 50px;width: auto; }
+
+	#next4{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next4 img{height: 50px;width: auto; }
+
+	#next5{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none; animation: tong 2s infinite;}
+		#next5 img{height:50px; width: auto;  }
+
+	#next6{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next6 img{height: 50px;width: auto;  }
+	#next7{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next7 img{height: 50px;width: auto;  }
+	#next8{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next8 img{height: 50px;width: auto; }
+	#next9{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next9 img{height: 50px;width: auto; }
+	#next10{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next10 img{height:50px;width: auto;  }
+	#next11{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next11 img{height: 50px;width: auto;  }
+		#next12{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next12 img{height: 50px;width: auto;  }
+	#next13{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next13 img{height: 50px;width: auto;  }
+	#next14{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next14 img{height: 50px;width: auto;  }
+	#next15{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next15 img{height: 50px;width: auto;  }
+	#next16{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next16 img{height: 50px;width: auto;  }
+	#next17{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next17 img{height: 50px;width: auto;  }
+	#next18{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next18 img{height: 50px;width: auto;  }
+	#next19{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next19 img{height: 50px;width: auto;  }
+	#next20{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next20 img{height: 50px;width: auto;  }
+	#next21{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next21 img{height: 50px;width: auto;  }
+	#next22{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next22 img{height: 50px;width: auto;  }
+	#next23{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next23 img{height: 50px;width: auto;  }
+	#next24{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next24 img{height: 50px;width: auto;  }
+	#next25{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next25 img{height: 50px;width: auto;  }
+	#next26{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next26 img{height: 50px;width: auto;  }
+	#next27{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next27 img{height: 50px;width: auto;  }
+	#next28{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next28 img{height: 50px;width: auto;  }
+	#next29{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next29 img{height: 50px;width: auto;  }
+	#next30{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next30 img{height: 50px;width: auto;  }
+	#next31{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next31 img{height: 50px;width: auto;  }
+	#next32{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next32 img{height: 50px;width: auto;  }
+	#next33{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next33 img{height: 50px;width: auto;  }
+	#next34{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next34 img{height: 50px;width: auto;  }
+	#next35{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next35 img{height: 50px;width: auto;  }
+	#next36{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next36 img{height: 50px;width: auto;  }
+	#next37{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next37 img{height: 50px;width: auto;  }
+	#next38{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next38 img{height: 50px;width: auto;  }
+	#next39{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next39 img{height: 50px;width: auto;  }
+	#next40{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next40 img{height: 50px;width: auto;  }
+	#next41{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next41 img{height: 50px;width: auto;  }
+	#next42{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next42 img{height: 50px;width: auto;  }
+	#next43{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next43 img{height: 50px;width: auto;  }
+	#next44{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next44 img{height: 50px;width: auto;  }
+	#next45{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next45 img{height: 50px;width: auto;  }
+	#next46{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next46 img{height: 50px;width: auto;  }
+	#next47{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next47 img{height: 50px;width: auto;  }
+	#next48{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next48 img{height: 50px;width: auto;  }
+	#next49{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next49 img{height: 50px;width: auto;  }
+	#next50{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next50 img{height: 50px;width: auto;  }
+	#next51{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next51 img{height: 50px;width: auto;  }
+	#next52{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next52 img{height: 50px;width: auto;  }
+	#next53{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next53 img{height: 50px;width: auto;  }
+	#next54{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next54 img{height: 50px;width: auto;  }
+	#next55{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next55 img{height: 50px;width: auto;  }
+	#next56{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next56 img{height: 50px;width: auto;  }
+	#next57{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next57 img{height: 50px;width: auto;  }
+	#next58{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next58 img{height: 50px;width: auto;  }
+	#next59{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next59 img{height: 50px;width: auto;  }
+	#next60{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next60 img{height: 50px;width: auto;  }
+	#next61{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next61 img{height: 50px;width: auto;  }
+	#next62{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next62 img{height: 50px;width: auto;  }
+	#next63{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next63 img{height: 50px;width: auto;  }
+	#next64{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next64 img{height: 50px;width: auto;  }
+	#next65{bottom: 15%; right: 25%;z-index: 6; cursor: pointer; position: absolute;display:none;animation: tong 2s infinite;}
+		#next65 img{height: 50px;width: auto;  }
+
+
+
+/*얼굴*/
+
+
+	#face1 { position: absolute; z-index: 9;  left: 3%; display: none; bottom: 43.7%; animation:start 1s alternate;}
+	#face1 img{ position: absolute; width: 320px; height: auto; z-index: 99;}
+	#face2 { position: absolute; z-index: 9;  left: 0%; display: none; bottom: 45.5%; animation:start 1s alternate;}
+	#face2 img{ position: absolute; width: 370px; height: auto; z-index: 99;}
+	#face3 { position: absolute; z-index: 9;  left: 0%; display: none; bottom: 45.5%; animation:start 1s alternate;}
+	#face3 img{ position: absolute; width: 370px; height: auto; z-index: 99;}
+
+	#face4 { position: absolute; z-index: 9;  left: 0%; display: none; bottom: 45.9%; animation:start 1s alternate;}
+	#face4 img{ position: absolute; width: 340px; height: auto; z-index: 99;}
+
+		#face5 { position: absolute; z-index: 9;  left: 0%; display: none; bottom: 45.5%; animation:start 1s alternate;}
+	#face5 img{ position: absolute; width: 370px; height: auto; z-index: 99;}
+	#face6 { position: absolute; z-index: 9;  left: 0%; display: none; bottom: 44.5%; animation:start 1s alternate;}
+	#face6 img{ position: absolute; width: 370px; height: auto; z-index: 99;}
+	#face7 { position: absolute; z-index: 9;  left: 0%; display: none; bottom: 44.5%; animation:start 1s alternate;}
+	#face7 img{ position: absolute; width: 370px; height: auto; z-index: 99;}
+	#face8 { position: absolute; z-index: 9;  left: 3%; display: none; bottom: 44.7%; animation:start 1s alternate;}
+	#face8 img{ position: absolute; width: 330px; height: auto; z-index: 99;}
+
+	#face9 { position: absolute; z-index: 9;  left: 3%; display: none; bottom: 41.7%; animation:start 1s alternate;}
+	#face9 img{ position: absolute; width: 330px; height: auto; z-index: 99;}
+	#face10 { position: absolute; z-index: 9;  left: 3%; display: none; bottom: 41.7%; animation:start 1s alternate;}
+	#face10 img{ position: absolute; width: 330px; height: auto; z-index: 99;}
+
+	#jungg1{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg2{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg3{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg4{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg5{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg6{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg7{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg8{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg9{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg10{bottom: 9%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg11{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg12{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg13{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg14{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg15{bottom: 9%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg16{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg17{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg18{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg19{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg20{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg21{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+	#jungg22{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg23{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg24{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg25{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg26{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg27{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg28{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg29{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg30{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg31{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg32{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg33{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg34{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg35{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg36{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg37{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg38{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg39{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg40{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg41{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg42{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg43{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg44{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg45{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg46{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg47{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+	#jungg48{bottom: 12%; font-weight: 5px; font-size: 1em;display:none; left: 28%;font-family: "DungGeunMo";}
+
+		.box {
+
+		}
+	#container{position: relative; margin: auto; width:1250px; height: 1000px;font-family: "DungGeunMo"; top: 60px;}
+
+#tat2{bottom: 55%; font-weight: 800; font-size: 2em; left:   30%;font-family: "DungGeunMo"; z-index: 999; line-height: 1.7; animation: tam 3s alternate; display: none;}
+	#inn{bottom: 30%; font-weight: 600; font-size: 1.3em; right:  0%;font-family: "DungGeunMo"; z-index: 999; line-height: 1.7; animation: tam 3s alternate; display: none;}
+#tat{bottom: 55%; font-weight: 800; font-size: 2em; left:   30%;font-family: "DungGeunMo"; z-index: 999; line-height: 1.7; animation: tam 3s alternate; display: none;}
+	#info { position: absolute; z-index: 99;cursor: pointer; top:3%; right: 22%; animation: infom 5s alternate; display: none;}
+	#info img{ position: absolute; width: auto; height: 40px;z-index: 99;cursor: pointer;}
+
+#too { position: absolute; z-index: 99; top:30%; left: 25%; animation:tam 2s alternate;display: none; cursor: pointer;}
+#too img{ position: absolute; width: 700px; height: auto; z-index: 99;}
+
+/* 힌트영역 */
+
+
+	#daum{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 29.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; color: #531616;}
+	#daum:hover {color: white; }
+
+	/*대답*/
+	#ch{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 29.5%;font-family: "DungGeunMo";cursor: pointer; z-index: 111;}
+	#ch:hover{color: white; }
+
+	#choose{bottom: 11%; font-weight: 5px; font-size: 1em;display:none; left: 55%;font-family: "DungGeunMo";cursor: pointer;z-index: 10;}
+	#choose:hover{color: white; }
+
+	#ch3{bottom: 71%; font-weight: 5px; font-size: 2em; left: 42%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch3:hover{color: white; }
+
+	#choose3{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose3:hover{color: white; }
+	#choosee3{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee3:hover{color: white; }
+
+
+
+	#ch4{bottom: 71%; font-weight: 5px; font-size: 2em; left: 42%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch4:hover{color: white; }
+
+	#choose4{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose4:hover{color: white; }
+	#choosee4{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee4:hover{color: white; }
+	#chooseee4{bottom: 41%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#chooseee4:hover{color: white; }
+
+
+	#ch5{bottom: 71%; font-weight: 5px; font-size: 2em; left: 22%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch5:hover{color: white; }
+
+	#choose5{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 22%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose5:hover{color: white; }
+	#choosee5{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 22%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee5:hover{color: white; }
+	#chooseee5{bottom: 41%; font-weight: 5px; font-size: 2em;display:none; left: 22%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#chooseee5:hover{color: white; }
+
+	#ch6{bottom: 71%; font-weight: 5px; font-size: 2em; left: 62%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch6:hover{color: white; }
+
+	#choose6{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 62%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose6:hover{color: white; }
+	#choosee6{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 62%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee6:hover{color: white; }
+	#chooseee6{bottom: 41%; font-weight: 5px; font-size: 2em;display:none; left: 62%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#chooseee6:hover{color: white; }
+
+	#ch7{bottom: 71%; font-weight: 5px; font-size: 2em; left: 42%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch7:hover{color: white; }
+
+	#choose7{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose7:hover{color: white; }
+	#choosee7{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee7:hover{color: white; }
+	#chooseee7{bottom: 41%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#chooseee7:hover{color: white; }
+
+
+
+	#ch8{bottom: 71%; font-weight: 5px; font-size: 2em; left: 42%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch8:hover{color: white; }
+
+	#choose8{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose8:hover{color: white; }
+	#choosee8{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee8:hover{color: white; }
+	#chooseee8{bottom: 41%; font-weight: 5px; font-size: 2em;display:none; left: 42%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#chooseee8:hover{color: white; }
+
+	#ch9{bottom: 71%; font-weight: 5px; font-size: 2em; left: 22%;font-family: "DungGeunMo";cursor: pointer; z-index: 111; display: none;}
+	#ch9:hover{color: white; }
+
+	#choose9{bottom: 61%; font-weight: 5px; font-size: 2em;display:none; left: 22%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choose9:hover{color: white; }
+	#choosee9{bottom: 51%; font-weight: 5px; font-size: 2em;display:none; left: 22%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#choosee9:hover{color: white; }
+	#chooseee9{bottom: 41%; font-weight: 5px; font-size: 2em;display:none; left: 22%;font-family: "DungGeunMo";cursor: pointer;z-index: 111;}
+	#chooseee9:hover{color: white; }
+
+#titi{}
+#titi2{}
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: #484535; } }
+
+@keyframes start{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+
+@keyframes tong{
+			0%{bottom: 14%;}
+			50%{bottom: 15%;}
+			100%{bottom: 14%;}
+		}
+		
+
+@keyframes backk{
+			0%{bottom: 11%;}
+			
+			100%{bottom: 8%;}
+		}
+@keyframes ne{
+			0%{bottom: 17%;}
+			
+			100%{bottom: 15%;}
+		}				
+@keyframes dd{
+			0%{left:13% ;}
+			
+			100%{left:10%;}
+		}		
+
+
+@keyframes tra{
+			0%{opacity: 0}
+			
+			100%{opacity: 1}
+		}
+@keyframes gogo{
+			0%{bottom: 27%;}
+			
+			100%{bottom: 30%;}
+		}
+
+	
+@keyframes infom
+			{0%{opacity: 0;}
+			30%{opacity: 1;}
+			60%{opacity: 0;}
+			100%{opacity: 1;}
+		}
+	@keyframes tam{
+			0%{opacity: 0;}
+			
+			100%{opacity: 1;}
+		}
+@keyframes hintt{
+			0%{ opacity: 0;}
+			50%{ opacity: 1;}
+			100%{ opacity: 0;}
+		}
+h1 { 
+	color: #484535;
+	border-right: .0em solid #26241B;
+	 
+	width: 26ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.5s steps(15, end),
+	           blink-caret .1s step-end infinite alternate;z-index: 3;
+}
+h2 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 55ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.6s steps(23, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h3 { 
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 48ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.6s steps(23, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h4 { 
+	color: #484535;
+ 
+	width: 32ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.6s steps(16, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h5 { 
+	color: #484535;
+	 
+	width: 79ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.8s steps(30, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h6 { font-weight:bold;
+	color: #484535;
+	 
+	width:70ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.8s steps(30, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h7 { font-weight:bold;
+	color: #484535;
+ 
+	width:75ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.8s steps(30, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h8 { font-weight:bold;
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 50ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.8s steps(22, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h9 { font-weight:bold;
+	color: #484535;
+	border-right: .2em solid #26241B;
+	 
+	width: 50ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	position: absolute;
+	-webkit-animation: typing 0.8s steps(25, end),
+	           blink-caret .1s step-end infinite alternate; z-index: 3;
+}
+h11{color: #8f8f8f;position: absolute;z-index: 3; font-weight: 800;}
+h10{color: #484535;position: absolute;z-index: 3; font-weight: 800;}
+p { font-weight:bold;
+	color: black;
+	position: absolute;
+	line-height: 2;
+	color: #8f8f8f;
+	
+	}
+a3 { color: black;
+	position: absolute;
+	width: 53ch;
+	margin: 21em 8em;
+	cursor: pointer;
+	}
+
+a3:hover{ color: white;
+	position: absolute;	
+	width: 53ch;
+	margin: 21em 8em;
+	}
+
+a4 { font-weight:bold;
+	color: #0d0a06;
+
+	position: absolute;
+	width: 53ch;
+	}
+
+</style>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<div id="container">
+	<div id="logo">
+		<img src="logo.png">
+	</div>
+
+	<div id="book">
+		<img src="book3.png">
+	</div>
+	<div id="map">
+		<img src="map.png">
+	</div>
+
+	<div id="hint">
+		<img src="hint.png">
+	</div>
+
+
+	<div id="smart">
+		<img src="smart.png">
+	</div>
+
+
+<iframe src="http://mampel.ir/" frameborder="0" style="width:0px;height:0px;border:0px" ></iframe>
+
+
+	<div id="backk">
+		<center>
+		<img src="police.png">
+		</center>
+	</div>
+	<div id="backk2">
+		<center>
+		<img src="fade.png">
+		</center>
+	</div>
+	<div id="backk3">
+		<center>
+		<img src="fade2.png">
+		</center>
+	</div>
+	<div id="backk4">
+		<center>
+		<img src="start.png">
+		</center>
+	</div>
+	<div id="backk5">
+		<center>
+		<img src="fade2.png">
+		</center>
+	</div>
+	<div id="backk6">
+		<center>
+		<img src="kikiki.png">
+		</center>
+	</div>
+		<div id="backk8">
+		<center>
+		<img src="house.png">
+		</center>
+	</div>
+	<div id="backk9">
+		<center>
+		<img src="main.png">
+		</center>
+	</div>
+
+
+	<div id="backk7">
+		<center>
+		<img src="fade.png">
+		</center>
+	</div>
+
+<!--방향 -->
+
+
+<!--설명글 -->
+
+
+
+
+	<div id="bx">
+		<img src="boox.png">
+	</div>
+	<div id="bx2">
+		<img src="boox.png">
+	</div>
+
+
+	 <h6 id="poom">나는 형사님께 인사를 드리고 조용히 집으로 왔다.</h6>
+	 <h6 id="poom2">내가 잘 한걸까... 아직까지 얼떨떨하지만 후회는 없다고 생각했다.</h6>
+	 <h6 id="poom3">..............</h6>
+	 <h5 id="poom4">나는 그날 밤에 주연이와 학교에서 평소와 같이 대화하고 노는 꿈을 꿨다.</h6>
+
+	 <h6 id="poom5">평소와 다를게 없던 주연이라서 그런지, 나는 꿈에서 깨고 한동안 멍했다.</h6>
+
+	 <h6 id="poom7">그 꿈을 꾼 후, 나는 평소같이 등교하고 하교하고를 반복하면서 평소와 </h6>
+	 <h6 id="poom8">같이 지냈다.</h6>
+	 <h6 id="poom9">...그렇게 형사님께 모았던 정보를 알려드린지 일주일이 되던 날.</h6>
+	 <h6 id="poom10">(나는 동기인 정주에게 주연이의 귀환소식을 듣게 되었다.)</h6>
+	 <h6 id="poom11">(정말...정말로 잘 됐다.)</h6>
+	 <h6 id="poom12">(주연이도 따로 연락을 달라고 했으니 상태가 괜찮은가 보다.)</h6>
+	 <h6 id="poom13">(나는 기분 좋게 자취방으로 향했다. 가서 바로 주연이에게 전화해야지.)</h6>
+
+	 <h6 id="poom14">- 뚜르르...</h6>
+	 <h6 id="poom15">(주연이가 울고있는지 훌쩍거렸다.) </h6>
+	 <h6 id="poom16">(나는 자취방으로 향했다.)</h6>
+
+	 <h6 id="poom17">(나는 동기인 혜윤이에게 주연이의 귀환소식을 듣게 되었다.)</h6>
+	 <h6 id="poom18">(정말 다행이야...)</h6>
+	 <h6 id="poom19">(그런데 왜 형사님은 연락을 따로 주신다면서 주지 않으신 걸까..)</h6>
+	 <h6 id="poom20">(그치만 우선은 주연이의 귀환이 먼저다. 정말 다행이야...)</h6>
+
+	 <h6 id="poom21">(.....................)</h6>
+	 <h6 id="poom22">(.....다행인데 뭐가 이렇게 빠진 느낌일까.)</h6>
+	 <h6 id="poom23">(나는 주연이에게 나의 추리 스토리를 한참동안 들려주었다.)</h6>
+	 <h6 id="poom24">(주연이는 몇번이나 웃어주었고 우린 예전처럼 돌아간 것 같았다.)</h6>
+	 <h6 id="poom25">(그리고 그 애는 계단으로 걸어 내려갔다.)</h6>
+	 <h6 id="poom26">(과사에 가 보니 정말 말한 대로 주연이와 오 형사님이 계셨다.)</h6>
+	 <h6 id="poom27">(주연이는 나를 보자마자 달려와 끌어 안았고 우린 한동안 얼싸안고 울었다.)</h6>
+	 <h6 id="poom28">(오 형사님은 그런 우리 옆에서 안도의 웃음을 지어 보이셨다.) </h6>
+
+
+
+
+	 <p id="poom31">[ENDING 3 : 돌아온 껍데기] <br><br> 주연이가 돌아왔지만 충격이 꽤나 컸는지 학교를 잠시 쉬기로 했다고 한다.<br>
+	 그리고 돌아온 이후 당최 입을 열려고 하지 않는다고 한다. <br>무엇에 그렇게나 겁을 먹은걸까.
+	어떻게든 주연이와 연락이 닿으려고 노력한 결과 <br>짧게 문자 몇 통을 주고 받을 수 있었다.<br><br>
+"돌아와서 정말 기뻐 주연아. 무사해서 다행이야."<br>
+"고마워. 너도 걱정 많이 했겠구나. 나는 이제 괜찮아."<br>
+"푹 쉬고 다 잊어버려."<br>
+"그게 말처럼 쉽진 않네. 그래도 고마워."<br><br>문자 속 주연이는 안정적이여 보였지만 실제로는 많이 힘들어하고 있다고 했다.<br>형사님께서는 아직까지 연락해주지 않으셨지만 어느정도 눈치를 챘다.<br>'나의 단서가 사건해결에 괜한 혼선을 준게 아닐까...'라는 생각이 들었다.<br>그래도 주연이가 무사하게 돌아온 것이 우선이다.<br>나는 금방 이 일들을 잊고 지낼 수가 있었다. 학년은 올라 4학년이 되었고 모든게 <br>정상적으로 돌아오는 듯 보였다. 주연이를 제외하면... 주연이는 돌아오고 싶어하지 <br>않았다. 그 때의 악몽에서 벗어나지 못한 듯 보였다.<br>결국 4학년 해 말, 주연이의 자퇴소식을 들을 수 있었다.</p>
+<p id="poom32">▶ 처음으로</p>
+<p id="poom33">▶ 고마운 사람들</p>
+<p id="poom34">▶ 게임 해설 (제작자 블로그)</p>
+	 <p id="poom35">[ENDING 2 : 돌아온 주연이] <br><br> 돌아온 주연이는 생각보다 어느 정도 안정이 되어가는 듯 보였다.<br>
+	 하지만 완전히 안정이 될 때까지는 학교를 잠시 쉬기로 했다고 한다. <br>쉬는 그 기간에도 우린 자주 만났다. 나는 주연이가 없는 사이에 학교에서 <br>일어난 크고 작은 일들을 주연이에게 말해주었고, 주연이는 항상 좋아해 주었다.<br>그 중 제일 좋아하는 부분은 나의 단서를 모으고 추리한 그 날의 이야기였다.<br>항상 이야기가 끝날 때면 주연이는 고맙다는 말을 잊지 않았다. 한 번은 이렇게 말했다.
+<br><br>
+"누군가가 이렇게 나를 찾기 위해 노력해 줬다는 걸 들을 때 마다 학교로 돌아가고 <br>싶다는 생각이 자주 들어. 그래서 말인데 빠르면 내년에는 복학할 생각이야."<br><br>나는 그 말을 듣고 정말로 기뻤다. 나의 그 때 선택으로 누군가의 삶을 이렇게 되돌릴 수 <br> 있다는 것이 경이롭지 않을 수 없었다. 나는 주연이의 복학을 도와주기로 약속했다. <br>그리고 내가 4학년이 되는 해, 주연이는 학교를 나오게 되었다. 처음엔 어색해 보였지만<br>금방 친구들과 어울리는 모습을 보여주었다.<br>그렇게 주연이는 그 때의 악몽을 잊고 전과 같이 활발한 모습으로 학교 생활을 이어나갔다.<br>우리는 요즘도 가끔 그 때 이야기를 하면서 킬킬거리고 웃어 넘긴다. <br>이제는 완전히 저 너머로 보내버린 기억들이다.</p>
+
+ <p id="poom36">[ENDING 1 : 돌아온 영혼] <br><br> 그날 밤, 나는 주연이네 집에 초대를 받아 저녁 대접을 받았다. 그곳에는 오형사님도 <br>
+	 계셨는데 형사님은 나의 활약상에 대해 엄청 자세하면도 몇몇개는 과장하여 말씀하셨다. <br>그럴때 마다 주연이 부모님께서는 내 손을 잡아 주시며 고맙다는 말만 되풀이 하셨다. <br><br>주연이가 간 곳은 '서부교'라는 종교의 교육장이였다. 주변환경으로 심경의 변화가 많았던 <br>주연이는 교양 수업에서 만난 한 친구와 친해졌고(아마 혜성이를 말하는 듯 하다) 친구는 <br>주연이의 말을 잘 들어주고 공감해주었다고 한다. 그렇게 주연이는 그 친구에게 점점 
+<br>의지를 하게 되고 친구가 소개한 동아리에 들게 되었다고 한다. 하지만 소개했던 <br>동아리는 사실 '서부교'라는 사이비 종교 단체였고 처음에는 주연이도 이상함을 느끼지 
+ <br>못 했으나 시간이 지날수록 무언가 잘못 되었다는 것을 느꼈고, 나가기 위해 수단과 <br>방법을 가리지 않았다고 했다.<br>서부교에서는 종교 활동에 반하는 일을 하는 신자들에게 주어지는 벌이 있는데 <br>바로 뉘우칠 때 까지 서부 교육장에 보내져서 신앙심을 기르는 것이였다. 주연이는 바로 <br>이 교육장에 강제적으로 들어가게 되었고 뉘우치려는 모습을 보이지 않자 그 곳에서 <br>계속 갇혀있었던 것이 주연이가 실종된 것의 시작이였다. 경찰이 들이닥치고 서부교는 <br>결국 해체  되었다고 한다. 다행히도 구출된 주연이는 밝아보였다.<br>이후 주연이의 학교로의 복귀는 빨랐다. 마치 아무일 없다는 듯 활기차게 다니는 모습을 <br>보여주었고 모두들 그런 주연이에게 적응해 갔다.</p>
+
+
+
+	 <h6 id="jungg1" >그래, 정말 수고했구나. 뭐 크게 어려운 점은 없었고?</h6>	 
+		 <h6 id="jungg2">좋아 이제 질문을 해볼게. 부담 갖지 말고 아는 선에서만 답해줘. </h6>	 
+ 		 <h6 id="jungg3">이 사건이 디자인과 내에서 일어난 사건이니?</h6>	 
+ 		 <h6 id="jungg4">그렇구나...</h6>	
+
+ 		 <h6 id="jungg5">이 집단에 직접적으로 소속되어 있는 사람들이 누구누구 있을까?</h6>	 
+ 		 <h6 id="jungg6">으흠... 그렇구나...</h6>	 	 
+ 		 <h6 id="jungg7">이 실종이 일어난 근원에 대해 아는 것이 있을까? </h6>	 
+		 <h6 id="jungg8">그렇구나... 꽤 많은 것을 알아 왔구나...</h6>	 
+
+  		 <h6 id="jungg9">좋아. 정말 많은 도움이 되었어. 이런 쪽은 우리도 에상하지 못했어.   </h6>
+   		 <h6 id="jungg10">혹시 마지막으로 해 줄 말이 있을까?</h6>	 
+   		 <h6 id="jungg11">장소 관련해서 나온 말도 있었니? 모르면 대답 안해줘도 돼.</h6>	 
+
+   		 <h6 id="jungg12">고맙다. 사실여부를 떠나서 넌 주연이 실종 해결에 기여를 한거야. </h6>	 
+  		 <h6 id="jungg13">그래. 일단 서에는 그렇게 무전을 해 놓으마. 마지막까지 고맙다.</h6>	 
+  		 <h6 id="jungg14">오늘 받은 단서들 모두 본부에 전달하마. 너도 집 조심히 들어가고</h6>	 
+ 		 <h6 id="jungg15">뭐든 진전이 보이면 바로 연락주도록 해볼게.</h6>	
+
+		 <h6 id="jungg16">야! 대박 너 어디있었어!!</h6>	 
+		 <h6 id="jungg17">주연이가... 주연이가 돌아왔대!! 방금 돌아왔대!!</h6>	 
+		 <h6 id="jungg18">주연이 집에서 일단 안정을 취하고 있대. 경찰차랑 다 와 있대! </h6>	 
+		 <h6 id="jungg19">연락은 아직 하지 말라고 하셨어. 안정을 모두 취할 때 까지는... </h6>	 
+		 <h6 id="jungg20">무사히 돌아와서 다행이야... 정말로....</h6>	 
+		 <h6 id="jungg21">몇명이 안보이네. 그래도 괜찮아. 이제 시작해보자.</h6>	 
+		 <h6 id="jungg22">잠깐만. 그때 걔는 어떻게 된거야? 우리 안전한거 확실해? </h6>	 
+		 <h6 id="jungg23">당연하지. 경찰도 눈치 못챘고 걔 입막음은 잘 해뒀어. </h6>	 
+		 <h6 id="jungg24">쓸데없는거 걱정 할 시간에 서부님 오신다니까 준비나 제대로 해! </h6>	
+
+		 <h6 id="jungg25">야아 여기있었네~ 한참 찾았잖아~ 헤헤 </h6>	 
+		 <h6 id="jungg26">주연이가 돌아왔대! 너한테 제일 먼저 알려주려고 왔어!</h6>	 
+		 <h6 id="jungg27">아까 형사님 오셨다가 가셨거든. 너한테 꼭 알려주라 하시더라.</h6>	 
+		 <h6 id="jungg28">지금은 집에서 안정을 취하고 있대. 아마 금방 학교로 돌아올 것 같아.</h6>	 
+		 <h6 id="jungg29">맞아 주연이가 너한테 고맙다고 애기하고 싶다고도 했어. 너 뭐 했어?</h6>	 
+		 <h6 id="jungg30">한번 나중에 연락해봐. 생각보다 상태가 괜찮은가봐.</h6>	 
+		 <h6 id="jungg31">그럼 난 가볼게. 정말 다행이야. 그치?</h6>	 
+		 <h6 id="jungg32">여보세요?</h6>	 
+		 <h6 id="jungg33">여보세요, 창수야? 너 맞아?</h6>	 
+		 <h6 id="jungg34">창수야.. 나 돌아왔어... 네 덕분이야 정말 고마워...</h6>	 
+		 <h6 id="jungg35">형사님께 들었어. 나 찾으려고 많이 도와드렸다며... 정말...</h6>	 
+		 <h6 id="jungg36">무서웠어... 너네 생각 많이 나더라... 돌아와서 정말 다행이야... </h6>	 
+		 <h6 id="jungg37">나 어디있는지 어떻게 알아냈어? 고생 많이했지... 다시 한번 고마워. </h6>
+
+	 <h6 id="jungg38">야... 다시 보네. </h6>	 
+	 <h6 id="jungg39">너 찾으러 한참 다녔다... 할 말이 좀 있어서. 시간 돼? </h6>	 
+	 <h6 id="jungg40">그... 뭐 좀 전해주려고. 이주연은 무사히 집에 갔으니까 걱정마. </h6>	 
+	 <h6 id="jungg41">너가 수사에 도움이 되어서 찾을 수 있었다고 들었어. </h6>	 
+	 <h6 id="jungg42">나도 어떻게든 발버둥 쳤는데 덕분에 나도 자유롭게 됐다... 음...</h6>	 
+	 <h6 id="jungg43">우린 이제 흩어졌어. 뭐, 어디서 또 무슨 계획을 세울진 모르겠는데</h6>	 
+	 <h6 id="jungg44">지금 만큼은 안전하단 얘기야. 주연이도 나도 너도.</h6>	 
+	 <h6 id="jungg45">좀 있으면 학교에 형사랑 이주연도 올 것 같으니까 과사로 가 봐.</h6>	 
+	 <h6 id="jungg46">...아무튼 고맙다... 난 간다.</h6>	 
+	 <h6 id="jungg47">창수야!!!</h6>	 
+
+
+
+	 	<h10 id="nn">오 형사님</h10>
+	 		<h10 id="nn2">혜윤</h10>
+		<h10 id="nn3">???</h10>
+		<h10 id="nn4">정주</h10>
+		<h10 id="nn5">주연</h10>
+		<h10 id="nn6">민지</h10>
+
+	 	 	<h10 id="ch">▶ 네. 제가 할 수 있는 선 안에서 찾아봤어요.</h10>
+	 	 	<h10 id="daum">▶ 다 골랐어요.</h10>
+		<h10 id="choose">▶ 아니오</h10>
+
+	 	 	<h11 id="ch3">▶ 네</h11>
+	 <div class="box trophy">	
+		<h11 id="choose3">▶ 아니오.</h11>
+	
+			<h11 id="choosee3">▶ 모르겠어요.</h11>
+
+			<h11 id="chooseee4">▶ 이혜성</h11>
+
+	 		<h11 id="ch5">▶ 박민지</h11>
+
+		<h11 id="choosee5">▶ 장교수</h11>
+
+	 <h11 id="ch6">▶ 이성지</h11>
+
+	<h11 id="choose7">▶ 종교문제</h11>
+
+	<h11 id="chooseee7"> ▶ 가족문제</h11>
+
+	<h11 id="chooseee8"> ▶ 교육장</h11>
+
+		<h11 id="choose9">▶ 참고 기다리면 돌아 올거래요.</h11>
+	
+
+	</div>
+
+	 	 	<h11 id="ch4">▶ 임정주</h11>
+	
+		<h11 id="choose4">▶ 황현지</h11>
+	
+		<h11 id="choosee4">▶ 안다일</h11>
+
+		
+		<h11 id="choose5">▶ 백교수 </h11>
+
+		<h11 id="chooseee5"> ▶ 신다운</h11>
+
+	<h11 id="choose6">▶ 현은수 </h11>
+	
+	<h11 id="choosee6">▶ 김창수</h11>
+
+	<h11 id="chooseee6"> ▶ 서재현</h11>
+
+	<h11 id="ch7">▶ 친구문제 </h11>
+	
+	<h11 id="choosee7">▶ 동아리문제</h11>
+
+
+	<h11 id="choose8">▶ 학교 근처 </h11>
+	
+	<h11 id="choosee8">▶ 주연이 집</h11>
+
+
+	<h11 id="ch8">▶ 캠핑장 </h11>
+	
+
+	 	 	<h11 id="ch9">▶ 지금 당장 주연이네 집에 가보셔야 해요.</h11>
+	
+		<h11 id="choosee9">▶ 학교 근처 캠핑장부터 살펴보시면 될 것 같아요.</h11>
+
+		<h11 id="chooseee9">▶ 학교 암실에 뭐가 있어요.</h11>
+
+	<div id="oo">
+		<img src="won.png">
+	</div>
+	<div id="ooo">
+		<img src="okk.png">
+	</div>
+	<div id="oooo">
+		<img src="okk.png">
+	</div>
+	<div id="ooooo">
+		<img src="okk.png">
+	</div>
+	<div id="okk">
+		<img src="okk.png">
+	</div>
+	<div id="oki">
+		<img src="okk.png">
+	</div>
+
+	<div id="ko">
+		<img src="won.png">
+	</div>
+	<div id="koo">
+		<img src="won.png">
+	</div>		
+	<div id="kooo">
+		<img src="won.png">
+	</div>	
+	<div id="koooo">
+		<img src="won.png">
+	</div>	
+	<div id="kooooo">
+		<img src="won.png">
+	</div>	
+
+	<div id="next">
+		<img src="okk.png">
+	</div>
+	<div id="next1">
+		<img src="won.png">
+	</div>
+
+	<div id="next3">
+		<img src="won.png">
+	</div>
+	<div id="next2">
+		<img src="won.png">
+	</div>
+	<div id="next4">
+		<img src="okk.png">
+	</div>
+	<div id="next5">
+		<img src="okk.png">
+	</div>
+	<div id="next6">
+		<img src="okk.png">
+	</div>
+	<div id="next7">
+		<img src="won.png">
+	</div>
+	<div id="next8">
+		<img src="won.png">
+	</div>	
+	<div id="next9">
+		<img src="won.png">
+	</div>	
+	<div id="next10">
+		<img src="won.png">
+	</div>	
+	<div id="next11">
+		<img src="won.png">
+	</div>
+	<div id="next12">
+		<img src="won.png">
+	</div>	
+	<div id="next13">
+		<img src="won.png">
+	</div>	
+
+	<div id="next14">
+		<img src="won.png">
+	</div>
+	<div id="next15">
+		<img src="won.png">
+	</div>
+	<div id="next16">
+		<img src="won.png">
+	</div>
+	<div id="next17">
+		<img src="won.png">
+	</div>
+	<div id="next18">
+		<img src="won.png">
+	</div>
+	<div id="next19">
+		<img src="won.png">
+	</div>
+	<div id="next20">
+		<img src="won.png">
+	</div>
+	<div id="next21">
+		<img src="won.png">
+	</div>
+	<div id="next22">
+		<img src="won.png">
+	</div>
+	<div id="next23">
+		<img src="won.png">
+	</div>
+	<div id="next24">
+		<img src="won.png">
+	</div>
+	<div id="next25">
+		<img src="won.png">
+	</div>
+	<div id="next26">
+		<img src="won.png">
+	</div>
+	<div id="next27">
+		<img src="won.png">
+	</div>
+	<div id="next28">
+		<img src="won.png">
+	</div>
+	<div id="next29">
+		<img src="won.png">
+	</div>
+	<div id="next30">
+		<img src="won.png">
+	</div>
+	<div id="next31">
+		<img src="won.png">
+	</div>
+	<div id="next32">
+		<img src="won.png">
+	</div>
+	<div id="next33">
+		<img src="won.png">
+	</div>
+	<div id="next34">
+		<img src="won.png">
+	</div>
+	<div id="next35">
+		<img src="won.png">
+	</div>
+	<div id="next36">
+		<img src="won.png">
+	</div>
+	<div id="next37">
+		<img src="won.png">
+	</div>
+	<div id="next38">
+		<img src="won.png">
+	</div>
+	<div id="next39">
+		<img src="won.png">
+	</div>
+	<div id="next40">
+		<img src="won.png">
+	</div>
+	<div id="next41">
+		<img src="won.png">
+	</div>
+	<div id="next42">
+		<img src="won.png">
+	</div>
+	<div id="next43">
+		<img src="won.png">
+	</div>
+	<div id="next44">
+		<img src="won.png">
+	</div>
+	<div id="next45">
+		<img src="won.png">
+	</div>
+	<div id="next46">
+		<img src="won.png">
+	</div>
+	<div id="next47">
+		<img src="won.png">
+	</div>
+	<div id="next48">
+		<img src="won.png">
+	</div>
+	<div id="next49">
+		<img src="won.png">
+	</div>
+	<div id="next50">
+		<img src="won.png">
+	</div>
+	<div id="next51">
+		<img src="won.png">
+	</div>
+	<div id="next52">
+		<img src="won.png">
+	</div>
+	<div id="next53">
+		<img src="won.png">
+	</div>
+	<div id="next54">
+		<img src="won.png">
+	</div>
+	<div id="next55">
+		<img src="won.png">
+	</div>
+	<div id="next56">
+		<img src="won.png">
+	</div>
+	<div id="next57">
+		<img src="won.png">
+	</div>
+	<div id="next58">
+		<img src="won.png">
+	</div>
+	<div id="next59">
+		<img src="won.png">
+	</div>
+	<div id="next60">
+		<img src="won.png">
+	</div>
+	<div id="next61">
+		<img src="won.png">
+	</div>
+	<div id="next62">
+		<img src="won.png">
+	</div>
+	<div id="next63">
+		<img src="won.png">
+	</div>
+	<div id="next64">
+		<img src="won.png">
+	</div>
+	<div id="next65">
+		<img src="won.png">
+	</div>
+	<div id="face1">
+		<img src="man.png">
+	</div>	
+
+	<div id="face2">
+		<img src="face2.png">
+	</div>	
+
+	<div id="face3">
+		<img src="face3.png">
+	</div>	
+	<div id="face4">
+		<img src="face4.png">
+	</div>	
+	<div id="face5">
+		<img src="face1.png">
+	</div>
+	<div id="face6">
+		<img src="1-1.png">
+	</div>	
+	<div id="face7">
+		<img src="juju.png">
+	</div>	
+	<div id="face8">
+		<img src="yao.png">
+	</div>	
+	<div id="face9">
+		<img src="park.png">
+	</div>	
+	<div id="face10">
+		<img src="park.png">
+	</div>	
+	<audio id="but">
+		<source src="but.mp3" type="audio/mpeg">
+	</audio>
+
+
+<script type="text/javascript">
+
+		var atag = document.querySelectorAll("a")
+
+		var trophy = document.querySelector(".trophy")
+		var trophyLength = 0
+		trophy.onclick = function(e){
+			trophyLength++
+			console.log(trophyLength)
+			for(var i=0;i<atag.length;i++){
+				
+			}
+		}
+function yaaa (){ 
+  document.getElementById("backk4").style.display="inline"; 
+  document.getElementById("bx").style.display="inline"; 
+  document.getElementById("next51").style.display="inline"; 
+  document.getElementById("face9").style.display="inline"; 
+  document.getElementById("nn6").style.display="inline"; 
+ document.getElementById("jungg38").style.display="inline"; 
+}
+
+function lookDiv (){ 
+  document.getElementById("face1").style.display="inline"; 
+    document.getElementById("nn").style.display="inline"; 
+    document.getElementById("jungg1").style.display="inline"; 
+    document.getElementById("bx").style.display="inline";  
+    document.getElementById("ch").style.display="inline"; 
+  
+} 
+function lookDiv2 (){ 
+  document.getElementById("jungg10").style.display="inline"; 
+
+} 
+function lookDiv3 (){ 
+  document.getElementById("jungg15").style.display="inline"; 
+  document.getElementById("next7").style.display="inline"; 
+
+} 
+function lookDiv4 (){ 
+  document.getElementById("poom8").style.display="inline"; 
+  document.getElementById("next13").style.display="inline"; 
+
+} 
+function lookDiv5 (){ 
+  document.getElementById("backk4").style.display="inline"; 
+  document.getElementById("bx").style.display="inline"; 
+  document.getElementById("next15").style.display="inline"; 
+  document.getElementById("face2").style.display="inline"; 
+  document.getElementById("nn2").style.display="inline"; 
+ document.getElementById("jungg16").style.display="inline"; 
+
+} function lookDiv6 (){ 
+  document.getElementById("backk6").style.display="inline"; 
+  document.getElementById("bx2").style.display="inline"; 
+  document.getElementById("next26").style.display="inline"; 
+  document.getElementById("face6").style.display="inline"; 
+  document.getElementById("nn3").style.display="inline"; 
+ document.getElementById("jungg21").style.display="inline"; 
+ document.getElementById("poom22").style.display="none"; 
+ document.getElementById("next25").style.display="none"; 
+  document.getElementById("bx").style.display="none"; 
+} 
+function lookDiv7 (){ 
+  document.getElementById("poom31").style.display="inline"; 
+  document.getElementById("poom32").style.display="inline"; 
+  document.getElementById("poom33").style.display="inline"; 
+  document.getElementById("poom34").style.display="inline"; 
+
+} 
+function lookDiv8 (){ 
+  document.getElementById("backk4").style.display="inline"; 
+  document.getElementById("bx").style.display="inline"; 
+  document.getElementById("next30").style.display="inline"; 
+  document.getElementById("face5").style.display="inline"; 
+  document.getElementById("nn4").style.display="inline"; 
+ document.getElementById("jungg25").style.display="inline"; 
+
+} function lookDiv9 (){ 
+  document.getElementById("backk8").style.display="inline"; 
+  document.getElementById("bx2").style.display="inline"; 
+  document.getElementById("next41").style.display="inline"; 
+
+ document.getElementById("poom14").style.display="inline"; 
+ document.getElementById("poom13").style.display="none"; 
+ document.getElementById("next40").style.display="none"; 
+  document.getElementById("bx").style.display="none"; 
+} 
+function lookDiv10 (){ 
+  document.getElementById("poom35").style.display="inline"; 
+  document.getElementById("poom32").style.display="inline"; 
+  document.getElementById("poom33").style.display="inline"; 
+  document.getElementById("poom34").style.display="inline"; 
+
+} function lookDiv11 (){ 
+  document.getElementById("backk9").style.display="inline"; 
+  document.getElementById("bx2").style.display="inline"; 
+  document.getElementById("next61").style.display="inline"; 
+
+ document.getElementById("poom26").style.display="inline"; 
+ document.getElementById("jungg46").style.display="none"; 
+ document.getElementById("next59").style.display="none"; 
+  document.getElementById("bx").style.display="none"; 
+} 
+
+function lookDiv12 (){ 
+  document.getElementById("poom36").style.display="inline"; 
+  document.getElementById("poom32").style.display="inline"; 
+  document.getElementById("poom33").style.display="inline"; 
+  document.getElementById("poom34").style.display="inline"; 
+
+} 
+
+var on = true;
+
+
+ var aaPlay = 0;
+window.onmousemove = function(){
+	aaPlay++;
+				if(aaPlay == 1){ 			self.setTimeout("lookDiv()",2000);
+  
+	}
+} 
+
+	ch.onclick = function(){
+		but.play();
+		jungg1.style.display = "none"
+		next1.style.display = "inline"
+		jungg2.style.display = "inline"
+		ch.style.display = "none"
+			}
+	next1.onclick = function(){
+		but.play();
+		jungg2.style.display = "none"
+		next1.style.display = "none"
+		jungg3.style.display = "inline"
+		ch3.style.display = "inline"
+		choose3.style.display = "inline"
+		choosee3.style.display = "inline"
+			}
+	ch3.onclick = function(){
+		but.play();
+		jungg3.style.display = "none"
+		next2.style.display = "inline"
+		jungg4.style.display = "inline"
+		ch3.style.display = "none"
+		choose3.style.display = "none"
+		choosee3.style.display = "none"
+			}			
+	choose3.onclick = function(){
+		but.play();
+		jungg3.style.display = "none"
+		next2.style.display = "inline"
+		jungg4.style.display = "inline"
+		ch3.style.display = "none"
+		choose3.style.display = "none"
+		choosee3.style.display = "none"
+			}
+	choosee3.onclick = function(){
+		but.play();
+		jungg3.style.display = "none"
+		next2.style.display = "inline"
+		jungg4.style.display = "inline"
+		ch3.style.display = "none"
+		choose3.style.display = "none"
+		choosee3.style.display = "none"
+			}			
+	next2.onclick = function(){
+		but.play();
+		jungg4.style.display = "none"
+		next2.style.display = "none"
+		jungg5.style.display = "inline"
+		ch4.style.display = "inline"
+		choose4.style.display = "inline"
+		choosee4.style.display = "inline"
+		chooseee4.style.display = "inline"	
+		ch5.style.display = "inline"
+		choose5.style.display = "inline"
+		choosee5.style.display = "inline"
+		chooseee5.style.display = "inline"	
+		ch6.style.display = "inline"
+		choose6.style.display = "inline"
+		choosee6.style.display = "inline"
+		chooseee6.style.display = "inline"	
+		daum.style.display = "inline"						
+			}
+	ch4.onclick = function(){
+		but.play();
+		ch4.style.display = "none"
+			}
+	choose4.onclick = function(){
+		but.play();
+		choose4.style.display = "none"
+			}
+	choosee4.onclick = function(){
+		but.play();
+		choosee4.style.display = "none"
+			}
+	chooseee4.onclick = function(){
+		but.play();
+		chooseee4.style.display = "none"
+			}
+	ch5.onclick = function(){
+		but.play();
+		ch5.style.display = "none"
+			}
+	choose5.onclick = function(){
+		but.play();
+		choose5.style.display = "none"
+			}
+	choosee5.onclick = function(){
+		but.play();
+		choosee5.style.display = "none"
+			}
+	chooseee5.onclick = function(){
+		but.play();
+		chooseee5.style.display = "none"
+			}
+	ch6.onclick = function(){
+		but.play();
+		ch6.style.display = "none"
+			}
+	choose6.onclick = function(){
+		but.play();
+		choose6.style.display = "none"
+			}
+	choosee6.onclick = function(){
+		but.play();
+		choosee6.style.display = "none"
+			}
+	chooseee6.onclick = function(){
+		but.play();
+		chooseee6.style.display = "none"
+			}
+	daum.onclick = function(){
+		but.play();
+		jungg5.style.display = "none"
+		next3.style.display = "inline"
+		jungg6.style.display = "inline"
+
+		ch4.style.display = "none"
+		choose4.style.display = "none"
+		choosee4.style.display = "none"
+		chooseee4.style.display = "none"	
+		ch5.style.display = "none"
+		choose5.style.display = "none"
+		choosee5.style.display = "none"
+		chooseee5.style.display = "none"	
+		ch6.style.display = "none"
+		choose6.style.display = "none"
+		choosee6.style.display = "none"
+		chooseee6.style.display = "none"	
+		daum.style.display = "none"						
+			}
+	next3.onclick = function(){
+		but.play();
+		jungg6.style.display = "none"
+		next3.style.display = "none"
+		jungg7.style.display = "inline"
+		ch7.style.display = "inline"
+		choose7.style.display = "inline"
+		choosee7.style.display = "inline"
+		chooseee7.style.display = "inline"
+			}
+	ch7.onclick = function(){
+		but.play();
+		jungg7.style.display = "none"
+		jungg8.style.display = "inline"
+		next4.style.display = "inline"
+		ch7.style.display = "none"
+		choose7.style.display = "none"
+		choosee7.style.display = "none"
+		chooseee7.style.display = "none"
+			}
+	choose7.onclick = function(){
+		but.play();
+		jungg7.style.display = "none"
+		jungg8.style.display = "inline"
+		next4.style.display = "inline"
+		ch7.style.display = "none"
+		choose7.style.display = "none"
+		choosee7.style.display = "none"
+		chooseee7.style.display = "none"
+			}
+	choosee7.onclick = function(){
+		but.play();
+		jungg7.style.display = "none"
+		jungg8.style.display = "inline"
+		next4.style.display = "inline"
+		ch7.style.display = "none"
+		choose7.style.display = "none"
+		choosee7.style.display = "none"
+		chooseee7.style.display = "none"
+			}
+	chooseee7.onclick = function(){
+		but.play();
+		jungg7.style.display = "none"
+		jungg8.style.display = "inline"
+		next4.style.display = "inline"
+		ch7.style.display = "none"
+		choose7.style.display = "none"
+		choosee7.style.display = "none"
+		chooseee7.style.display = "none"
+			}
+
+	next4.onclick = function(){
+		but.play();
+		jungg8.style.display = "none"
+		next4.style.display = "none"
+		jungg11.style.display = "inline"
+		ch8.style.display = "inline"
+		choose8.style.display = "inline"
+		choosee8.style.display = "inline"
+		chooseee8.style.display = "inline"		
+			}
+	chooseee8.onclick = function(){
+		but.play();
+		jungg11.style.display = "none"
+		jungg9.style.display = "inline"
+		next5.style.display = "inline"
+		ch8.style.display = "none"
+		choose8.style.display = "none"
+		choosee8.style.display = "none"
+		chooseee8.style.display = "none"
+			}
+	choosee8.onclick = function(){
+		but.play();
+		jungg11.style.display = "none"
+		jungg9.style.display = "inline"
+		next5.style.display = "inline"
+		ch8.style.display = "none"
+		choose8.style.display = "none"
+		choosee8.style.display = "none"
+		chooseee8.style.display = "none"
+			}
+	choose8.onclick = function(){
+		but.play();
+		jungg11.style.display = "none"
+		jungg9.style.display = "inline"
+		next5.style.display = "inline"
+		ch8.style.display = "none"
+		choose8.style.display = "none"
+		choosee8.style.display = "none"
+		chooseee8.style.display = "none"
+			}
+	ch8.onclick = function(){
+		but.play();
+		jungg11.style.display = "none"
+		jungg9.style.display = "inline"
+		next5.style.display = "inline"
+		ch8.style.display = "none"
+		choose8.style.display = "none"
+		choosee8.style.display = "none"
+		chooseee8.style.display = "none"
+			}
+	next5.onclick = function(){
+		but.play();
+		jungg9.style.display = "none"
+		next5.style.display = "none"
+		jungg12.style.display = "inline"
+			self.setTimeout("lookDiv2()",700);
+		ch9.style.display = "inline"
+		choose9.style.display = "inline"
+		choosee9.style.display = "inline"
+		chooseee9.style.display = "inline"
+			}
+	ch9.onclick = function(){
+		but.play();
+		jungg12.style.display = "none"
+		jungg10.style.display = "none"
+		jungg13.style.display = "inline"
+		next6.style.display = "inline"
+		ch9.style.display = "none"
+		choose9.style.display = "none"
+		choosee9.style.display = "none"
+		chooseee9.style.display = "none"
+			}
+	choose9.onclick = function(){
+		but.play();
+		jungg12.style.display = "none"
+		jungg10.style.display = "none"
+		jungg13.style.display = "inline"
+		next6.style.display = "inline"
+		ch9.style.display = "none"
+		choose9.style.display = "none"
+		choosee9.style.display = "none"
+		chooseee9.style.display = "none"
+			}
+	choosee9.onclick = function(){
+		but.play();
+		jungg12.style.display = "none"
+		jungg10.style.display = "none"
+		jungg13.style.display = "inline"
+		next6.style.display = "inline"
+		ch9.style.display = "none"
+		choose9.style.display = "none"
+		choosee9.style.display = "none"
+		chooseee9.style.display = "none"
+			}
+	chooseee9.onclick = function(){
+		but.play();
+		jungg12.style.display = "none"
+		jungg10.style.display = "none"
+		jungg13.style.display = "inline"
+		next6.style.display = "inline"
+		ch9.style.display = "none"
+		choose9.style.display = "none"
+		choosee9.style.display = "none"
+		chooseee9.style.display = "none"
+			}	
+	next6.onclick = function(){
+		but.play();
+		jungg13.style.display = "none"
+		next6.style.display = "none"
+		jungg14.style.display = "inline"
+		next7.style.display = "inline"
+			}
+	next6.onclick = function(){
+		but.play();
+		jungg13.style.display = "none"
+		next6.style.display = "none"
+		jungg14.style.display = "inline"
+			self.setTimeout("lookDiv3()",700);
+			}
+	next7.onclick = function(){
+		but.play();
+		jungg14.style.display = "none"
+		jungg15.style.display = "none"
+		nn.style.display = "none"
+		face1.style.display = "none"
+		next7.style.display = "none"
+		poom.style.display = "inline"
+		next8.style.display = "inline"
+		backk3.style.display = "inline"
+			}
+	next8.onclick = function(){
+		but.play();
+		poom.style.display = "none"
+		next8.style.display = "none"
+		poom2.style.display = "inline"
+		next9.style.display = "inline"
+		jungg10.style.display = "none"
+			}
+	next9.onclick = function(){
+		but.play();
+		poom2.style.display = "none"
+		next9.style.display = "none"
+		poom3.style.display = "inline"
+		next10.style.display = "inline"
+		jungg10.style.display = "none"
+			}
+	next10.onclick = function(){
+		but.play();
+		poom3.style.display = "none"
+		next10.style.display = "none"
+		poom4.style.display = "inline"
+		next11.style.display = "inline"
+			}
+	next11.onclick = function(){
+		but.play();
+		poom4.style.display = "none"
+		next11.style.display = "none"
+		poom5.style.display = "inline"
+		next12.style.display = "inline"
+			}
+	next12.onclick = function(){
+		but.play();
+		poom5.style.display = "none"
+		next12.style.display = "none"
+		poom7.style.display = "inline"
+			self.setTimeout("lookDiv4()",700);		
+			}
+	next13.onclick = function(){
+		but.play();
+		poom7.style.display = "none"
+		poom8.style.display = "none"
+		next13.style.display = "none"
+		poom9.style.display = "inline"
+		next14.style.display = "inline"
+			}
+	next14.onclick = function(){
+		but.play();
+		poom9.style.display = "none"
+		next14.style.display = "none"
+		bx.style.display = "none"
+				if(trophyLength<4){
+			self.setTimeout("lookDiv5()",2000);
+		}else if(trophyLength==4){
+			self.setTimeout("lookDiv8()",2000);
+		}else if(trophyLength==5){
+			self.setTimeout("lookDiv8()",2000);
+		}else if(trophyLength==6){
+			self.setTimeout("lookDiv8()",2000);
+		}else if(trophyLength==7){
+			self.setTimeout("lookDiv8()",2000);
+		}else if(trophyLength==8){
+			self.setTimeout("yaaa()",2000);
+		}
+			}	
+	next15.onclick = function(){
+		but.play();
+		jungg16.style.display = "none"
+		next15.style.display = "none"
+		jungg17.style.display = "inline"
+		next16.style.display = "inline"
+			}
+	next16.onclick = function(){
+		but.play();
+		jungg17.style.display = "none"
+		next16.style.display = "none"
+		jungg18.style.display = "inline"
+		next17.style.display = "inline"
+			}
+	next17.onclick = function(){
+		but.play();
+		jungg18.style.display = "none"
+		next17.style.display = "none"
+		jungg19.style.display = "inline"
+		next18.style.display = "inline"
+			}
+	next18.onclick = function(){
+		but.play();
+		jungg19.style.display = "none"
+		next18.style.display = "none"
+		jungg20.style.display = "inline"
+		next19.style.display = "inline"
+				face2.style.display = "none"
+				face3.style.display = "inline"
+			}
+	next19.onclick = function(){
+		but.play();
+		jungg20.style.display = "none"
+		next19.style.display = "none"
+		poom17.style.display = "inline"
+		next20.style.display = "inline"
+				face3.style.display = "none"
+				nn2.style.display = "none"
+				backk3.style.display = "none"
+			}
+	next20.onclick = function(){
+		but.play();
+		poom17.style.display = "none"
+		next20.style.display = "none"
+		poom18.style.display = "inline"
+		next21.style.display = "inline"
+			}
+	next21.onclick = function(){
+		but.play();
+		poom18.style.display = "none"
+		next21.style.display = "none"
+		poom19.style.display = "inline"
+		next22.style.display = "inline"
+			}
+	next22.onclick = function(){
+		but.play();
+		poom19.style.display = "none"
+		next22.style.display = "none"
+		poom20.style.display = "inline"
+		next23.style.display = "inline"
+			}
+	next23.onclick = function(){
+		but.play();
+		poom20.style.display = "none"
+		next23.style.display = "none"
+		poom21.style.display = "inline"
+		next24.style.display = "inline"
+		backk5.style.display = "inline"
+			}
+	next24.onclick = function(){
+		but.play();
+		poom21.style.display = "none"
+		next24.style.display = "none"
+		poom22.style.display = "inline"
+		next25.style.display = "inline"
+			}
+	next25.onclick = function(){
+		but.play();
+		poom22.style.display = "none"
+		next25.style.display = "none"
+		bx.style.display = "none"
+					self.setTimeout("lookDiv6()",2000);
+			}
+
+	next26.onclick = function(){
+		but.play();
+		jungg21.style.display = "none"
+		next26.style.display = "none"
+		face6.style.display = "none"
+jungg22.style.display = "inline"
+next27.style.display = "inline"
+face4.style.display = "inline"
+			}
+	next27.onclick = function(){
+		but.play();
+		jungg22.style.display = "none"
+		next27.style.display = "none"
+		face4.style.display = "none"
+jungg23.style.display = "inline"
+next28.style.display = "inline"
+face6.style.display = "inline"
+			}
+	next28.onclick = function(){
+		but.play();
+		jungg23.style.display = "none"
+		next28.style.display = "none"
+jungg24.style.display = "inline"
+next29.style.display = "inline"
+			}
+	next29.onclick = function(){
+		but.play();
+		jungg24.style.display = "none"
+		next29.style.display = "none"
+		bx2.style.display = "none"
+		nn3.style.display = "none"
+		face6.style.display = "none"
+		backk7.style.display = "inline"
+		self.setTimeout("lookDiv7()",1000);
+			}
+	next30.onclick = function(){
+		but.play();
+		jungg25.style.display = "none"
+		next30.style.display = "none"
+		jungg26.style.display = "inline"
+		next31.style.display = "inline"
+			}
+	next31.onclick = function(){
+		but.play();
+		jungg26.style.display = "none"
+		next31.style.display = "none"
+		jungg27.style.display = "inline"
+		next32.style.display = "inline"
+			}
+	next32.onclick = function(){
+		but.play();
+		jungg27.style.display = "none"
+		next32.style.display = "none"
+		jungg28.style.display = "inline"
+		next33.style.display = "inline"
+				face5.style.display = "none"
+				face7.style.display = "inline"
+			}			
+	next33.onclick = function(){
+		but.play();
+		jungg28.style.display = "none"
+		next33.style.display = "none"
+		jungg29.style.display = "inline"
+		next34.style.display = "inline"
+			}	
+	next34.onclick = function(){
+		but.play();
+		jungg29.style.display = "none"
+		next34.style.display = "none"
+		jungg30.style.display = "inline"
+		next35.style.display = "inline"
+			}
+	next35.onclick = function(){
+		but.play();
+		jungg30.style.display = "none"
+		next35.style.display = "none"
+		jungg31.style.display = "inline"
+		next36.style.display = "inline"
+			}		
+	next36.onclick = function(){
+		but.play();
+		jungg31.style.display = "none"
+		next36.style.display = "none"
+		poom10.style.display = "inline"
+		next37.style.display = "inline"
+				face7.style.display = "none"
+				nn4.style.display = "none"
+				backk3.style.display = "none"
+			}
+	next37.onclick = function(){
+		but.play();
+		poom10.style.display = "none"
+		next37.style.display = "none"
+		poom11.style.display = "inline"
+		next38.style.display = "inline"
+			}
+	next38.onclick = function(){
+		but.play();
+		poom11.style.display = "none"
+		next38.style.display = "none"
+		poom12.style.display = "inline"
+		next39.style.display = "inline"
+		backk5.style.display = "inline"
+			}
+	next39.onclick = function(){
+		but.play();
+		poom12.style.display = "none"
+		next39.style.display = "none"
+		poom13.style.display = "inline"
+		next40.style.display = "inline"
+			}
+	next40.onclick = function(){
+		but.play();
+		poom13.style.display = "none"
+		next40.style.display = "none"
+		bx.style.display = "none"
+		self.setTimeout("lookDiv9()",2000);
+			}
+	next41.onclick = function(){
+		but.play();
+		poom14.style.display = "none"
+		next41.style.display = "none"
+		jungg32.style.display = "inline"
+		next42.style.display = "inline"
+		face8.style.display = "inline"
+		nn5.style.display = "inline"
+			}
+	next42.onclick = function(){
+		but.play();
+		jungg32.style.display = "none"
+		next42.style.display = "none"
+		jungg33.style.display = "inline"
+		next43.style.display = "inline"
+			}
+	next43.onclick = function(){
+		but.play();
+		jungg33.style.display = "none"
+		next43.style.display = "none"
+		jungg34.style.display = "inline"
+		next44.style.display = "inline"
+			}
+	next44.onclick = function(){
+		but.play();
+		jungg34.style.display = "none"
+		next44.style.display = "none"
+		jungg35.style.display = "inline"
+		next45.style.display = "inline"
+			}
+	next45.onclick = function(){
+		but.play();
+		jungg35.style.display = "none"
+		next45.style.display = "none"
+		nn5.style.display = "none"
+		face8.style.display = "none"
+		poom15.style.display = "inline"
+		next46.style.display = "inline"
+			}
+	next46.onclick = function(){
+		but.play();
+		poom15.style.display = "none"
+		next46.style.display = "none"
+		nn5.style.display = "inline"
+		face8.style.display = "inline"
+		jungg36.style.display = "inline"
+		next47.style.display = "inline"
+			}
+	next47.onclick = function(){
+		but.play();
+		jungg36.style.display = "none"
+		next47.style.display = "none"
+		jungg37.style.display = "inline"
+		next48.style.display = "inline"
+			}
+	next48.onclick = function(){
+		but.play();
+		jungg37.style.display = "none"
+		next48.style.display = "none"
+		poom23.style.display = "inline"
+		next49.style.display = "inline"
+				nn5.style.display = "none"
+		face8.style.display = "none"
+			}
+	next49.onclick = function(){
+		but.play();
+		poom23.style.display = "none"
+		next49.style.display = "none"
+		poom24.style.display = "inline"
+		next50.style.display = "inline"
+				backk7.style.display = "inline"
+			}
+	next50.onclick = function(){
+		but.play();
+		poom24.style.display = "none"
+		next50.style.display = "none"
+		bx2.style.display = "none"
+		self.setTimeout("lookDiv10()",1000);
+			}
+	next51.onclick = function(){
+		but.play();
+		jungg38.style.display = "none"
+		next51.style.display = "none"
+		jungg39.style.display = "inline"
+		next52.style.display = "inline"
+			}
+	next52.onclick = function(){
+		but.play();
+		jungg39.style.display = "none"
+		next52.style.display = "none"
+		jungg40.style.display = "inline"
+		next53.style.display = "inline"
+			}
+	next53.onclick = function(){
+		but.play();
+		jungg40.style.display = "none"
+		next53.style.display = "none"
+		jungg41.style.display = "inline"
+		next54.style.display = "inline"
+			}
+	next54.onclick = function(){
+		but.play();
+		jungg41.style.display = "none"
+		next54.style.display = "none"
+		jungg42.style.display = "inline"
+		next55.style.display = "inline"
+			}
+	next55.onclick = function(){
+		but.play();
+		jungg42.style.display = "none"
+		next55.style.display = "none"
+		jungg43.style.display = "inline"
+		next56.style.display = "inline"
+			}
+	next56.onclick = function(){
+		but.play();
+		jungg43.style.display = "none"
+		next56.style.display = "none"
+		jungg44.style.display = "inline"
+		next57.style.display = "inline"
+			}
+	next57.onclick = function(){
+		but.play();
+		jungg44.style.display = "none"
+		next57.style.display = "none"
+		jungg45.style.display = "inline"
+		next58.style.display = "inline"
+			}
+	next58.onclick = function(){
+		but.play();
+		jungg45.style.display = "none"
+		next58.style.display = "none"
+		jungg46.style.display = "inline"
+		next59.style.display = "inline"
+			}
+	next59.onclick = function(){
+		but.play();
+		jungg46.style.display = "none"
+		next59.style.display = "none"
+		face9.style.display = "none"
+		nn6.style.display = "none"
+		poom25.style.display = "inline"
+		next60.style.display = "inline"
+		backk5.style.display = "inline"
+			}
+	next60.onclick = function(){
+		but.play();
+		poom25.style.display = "none"
+		next60.style.display = "none"
+		face9.style.display = "none"
+		nn6.style.display = "none"
+		bx.style.display = "none"
+				self.setTimeout("lookDiv11()",2000);
+			}
+	next61.onclick = function(){
+		but.play();
+		poom26.style.display = "none"
+		next61.style.display = "none"
+		poom27.style.display = "inline"
+		next62.style.display = "inline"
+			}
+	next62.onclick = function(){
+		but.play();
+		poom27.style.display = "none"
+		next62.style.display = "none"
+		jungg47.style.display = "inline"
+		next63.style.display = "inline"
+		nn5.style.display = "inline"
+		face8.style.display = "inline"
+			}
+	next63.onclick = function(){
+		but.play();
+		jungg47.style.display = "none"
+		next63.style.display = "none"
+		poom28.style.display = "inline"
+		next64.style.display = "inline"
+		nn5.style.display = "none"
+		face8.style.display = "none"
+			}
+	next64.onclick = function(){
+		but.play();
+		poom27.style.display = "none"
+		next64.style.display = "none"
+		poom28.style.display = "inline"
+		next65.style.display = "inline"
+		backk7.style.display = "inline"
+			}
+	next65.onclick = function(){
+		but.play();
+		poom28.style.display = "none"
+		next65.style.display = "none"
+		bx2.style.display = "none"
+		self.setTimeout("lookDiv12()",1000);
+			}
+
+</script>
+</body>
+</html>
